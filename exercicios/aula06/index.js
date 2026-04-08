@@ -14,7 +14,8 @@ console.log(('nome'));  // 'Olá, Maria!'
 
 // Exercício 2 — filtrarAprovados
 export function filtrarAprovados(alunos) {
-  // escreva seu código aqui
+  const aprovados = alunos.filter((aluno) => aluno.nota >= 60);
+  console.log(aprovados)
 }
 
 // Exercício 3 — extrairNomes
