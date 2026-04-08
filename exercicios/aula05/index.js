@@ -18,17 +18,30 @@ export function classificarIdade(idade) {
 
 // Exercício 2 — calcularDesconto
 export function calcularDesconto(preco, percentual) {
-  // escreva seu código aqui
+  return preco - (preco * percentual / 100);
 }
 
 // Exercício 3 — verificarAprovacao
 export function verificarAprovacao(nota) {
-  // escreva seu código aqui
+  if (nota >= 60){
+    return "Aprovado";
+  }
+  else if(60 >nota >= 40){
+    return "Recuperação";
+  }
+  else{
+    return "Reprovado";
+  }
 }
 
 // Exercício 4 — somarPares
 export function somarPares(numeros) {
-  // escreva seu código aqui
+  let soma = 0;
+  for (const numeros of numeros) {
+  if (numeros % 2 === 0){
+     soma += numeros;
+  }
+  return soma;
 }
 
 // Exercício 5 — contarLetra
