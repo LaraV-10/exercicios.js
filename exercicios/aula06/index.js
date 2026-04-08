@@ -10,7 +10,7 @@ export function criarSaudacao(nome) {
   return`Olá, ${nome}!`;
 }
 
-console.log(saudacao('Maria'));  // 'Olá, Maria!'
+console.log(('nome'));  // 'Olá, Maria!'
 
 // Exercício 2 — filtrarAprovados
 export function filtrarAprovados(alunos) {
