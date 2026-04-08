@@ -28,9 +28,9 @@ export function extrairNomes(alunos) {
 
 // Exercício 4 — buscarAluno
 export function buscarAluno(alunos, nome) {
-  const encontra = alunos.find((aluno) => aluno.nome === 'encontra');
-console.log(encontra);
-return encontra;
+  const aluno = alunos.find((aluno) => aluno.nome === 'nome');
+console.log(aluno);
+
 }
 
 // Exercício 5 — calcularMedia
