@@ -38,7 +38,7 @@ export function calcularMedia(notas) {
   if (notas.length === 0){
     return 0;
   }
-  let soma == 0;
+  let soma = 0;
   for(const nota of notas){
     soma += nota;
   }
