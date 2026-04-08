@@ -16,6 +16,7 @@ console.log(('nome'));  // 'Olá, Maria!'
 export function filtrarAprovados(alunos) {
   const aprovados = alunos.filter((aluno) => aluno.nota >= 60);
   console.log(aprovados)
+  return aprovados;
 }
 
 // Exercício 3 — extrairNomes
