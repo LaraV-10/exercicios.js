@@ -8,11 +8,11 @@
 // Exercício 1 — classificarIdade
 export function classificarIdade(idade) {
   if (idade < 12){
-    return "Criança";
-  }else if (12 <= idade <= 17){
-    return "Adolescente";
+    return "criança";
+  }else if (idade>= 12 && idade <= 17){
+    return "adolescente";
   }else {
-    return "Adulto";
+    return "adulto";
   }
 }
 
@@ -24,22 +24,23 @@ export function calcularDesconto(preco, percentual) {
 // Exercício 3 — verificarAprovacao
 export function verificarAprovacao(nota) {
   if (nota >= 60){
-    return "Aprovado";
+    return "aprovado";
   }
-  else if(60 >nota >= 40){
-    return "Recuperação";
+  else if(nota < 60 && nota >= 40){
+    return "recuperação";
   }
   else{
-    return "Reprovado";
+    return "reprovado";
   }
 }
 
 // Exercício 4 — somarPares
 export function somarPares(numeros) {
   let soma = 0;
-  for (const numeros of numeros) {
+  for (const numero of numeros) {
   if (numeros % 2 === 0){
      soma += numeros;
+  }
   }
   return soma;
 }
@@ -49,7 +50,7 @@ export function contarLetra(texto, letra) {
   let contador = 0;
   for (const caractere of texto) {
   if (caractere === letra){
-    return contador++;
+    contador++ ;
   }
   }
   return contador;
