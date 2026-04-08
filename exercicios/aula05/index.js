@@ -39,7 +39,7 @@ export function somarPares(numeros) {
   let soma = 0;
   for (const numero of numeros) {
   if (numeros % 2 === 0){
-     soma += numeros;
+     soma += numero;
   }
   }
   return soma;
